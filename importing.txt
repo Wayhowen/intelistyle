@@ -1,0 +1,4 @@
+root@22afbdf213a3:/data# mongoimport -u "root" -p "prisma" --authenticationDatabase "admin" --db mydb --collection garments --file garments.jl
+2023-05-13T20:31:25.807+0000    connected to: mongodb://localhost/
+2023-05-13T20:31:26.930+0000    11680 document(s) imported successfully. 0 document(s) failed to import.
+root@22afbdf213a3:/data#

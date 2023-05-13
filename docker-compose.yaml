@@ -1,0 +1,17 @@
+version: '3'
+services:
+  mongodb:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: prisma
+    ports:
+      - '27017:27017'
+    volumes:
+      - c:/data/db:/data/db
+      - c:/data/configdb:/data/configdb
+
+volumes:
+  data:
